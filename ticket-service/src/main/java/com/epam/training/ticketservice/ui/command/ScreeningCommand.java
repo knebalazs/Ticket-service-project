@@ -37,15 +37,15 @@ public class ScreeningCommand {
         if (roomRepository.findByName(nameOfRoom).isEmpty()) {
             throw new Exception("this room doesn't exist");
         }
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
         ScreeningDto screeningDto = new ScreeningDto(movieTitle, nameOfRoom, dateFormat.parse(startingTime));
 
 
         if (screeningService.isThereAnOverlap(screeningDto)) {
-            throw new Exception("There is an overlapping screening");
+            return "There is an overlapping screening";
         }
         if (screeningService.isThereAnOverlap(screeningDto)) {
-            throw new Exception("This would start in the break period after another screening in this room");
+            return "This would start in the break period after another screening in this room";
         }
         screeningService.addScreening(screeningDto);
         return "screening created";
@@ -76,7 +76,8 @@ public class ScreeningCommand {
             Optional<Movie> currentMovie = movieRepository.findByTitle(s.getMovieTitle());
             screening.append(s.getMovieTitle()).append(" (").append(currentMovie.get().getGenre())
                     .append(", ").append(currentMovie.get().getLengthInMinutes()).append(" minutes), screened in room ")
-                    .append(s.getRoomName()).append(", at ").append(s.getStartingTime()).append("\n");
+                    .append(s.getRoomName()).append(", at ").append(s.getStartingTime().toString().substring(0,16))
+                    .append("\n");
         }
         return screening.toString();
     }

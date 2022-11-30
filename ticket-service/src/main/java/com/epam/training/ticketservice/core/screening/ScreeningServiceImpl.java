@@ -43,7 +43,6 @@ public class ScreeningServiceImpl implements ScreeningService {
         for (ScreeningDto s : getScreeningList()) {
             if (s.getRoomName().equals(screeningDto.getRoomName())) {
                 Long timeDiff = (s.getStartingTime().getTime() - screeningDto.getStartingTime().getTime()) / 60000;
-                System.out.println(timeDiff);
                 if (timeDiff >= 0) {
                     return timeDiff < movieRepository.findByTitle(s.getMovieTitle()).get().getLengthInMinutes();
                 } else {
