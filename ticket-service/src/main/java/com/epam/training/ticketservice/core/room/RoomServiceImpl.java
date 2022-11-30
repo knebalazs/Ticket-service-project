@@ -3,6 +3,7 @@ package com.epam.training.ticketservice.core.room;
 import com.epam.training.ticketservice.core.room.model.RoomDto;
 import com.epam.training.ticketservice.core.room.presistence.entity.Room;
 import com.epam.training.ticketservice.core.room.presistence.repository.RoomRepository;
+import com.epam.training.ticketservice.core.screening.model.ScreeningDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

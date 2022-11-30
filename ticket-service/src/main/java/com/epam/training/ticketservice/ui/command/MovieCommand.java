@@ -58,13 +58,13 @@ public class MovieCommand {
     @ShellMethod(key = "list movies", value = "Lists movies")
     public String listMovies() {
         List<MovieDto> movieList = movieService.getMovieList();
-        String mlist = "";
+        StringBuilder mlist = new StringBuilder();
         if (movieService.getMovieList().isEmpty()) {
             return "There are no movies at the moment";
         }
         for (MovieDto m : movieList) {
-            mlist += m.getTitle() + " (" + m.getGenre() + ", " + m.getLengthInMinutes() + " minutes)\n";
+            mlist.append(m.getTitle()).append(" (").append(m.getGenre()).append(", ").append(m.getLengthInMinutes()).append(" minutes)\n");
         }
-        return mlist;
+        return mlist.toString();
     }
 }
