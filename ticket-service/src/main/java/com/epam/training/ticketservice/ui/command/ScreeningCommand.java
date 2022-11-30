@@ -31,20 +31,20 @@ public class ScreeningCommand {
         if (userService.describeUser().getRole().equals(User.Role.USER)) {
             throw new Exception("only admin user can create screenings");
         }
-        if (movieRepository.findByTitle(movieTitle).isEmpty()){
+        if (movieRepository.findByTitle(movieTitle).isEmpty()) {
             throw new Exception("this movie doesn't exist");
         }
-        if (roomRepository.findByName(nameOfRoom).isEmpty()){
+        if (roomRepository.findByName(nameOfRoom).isEmpty()) {
             throw new Exception("this room doesn't exist");
         }
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm");
         ScreeningDto screeningDto = new ScreeningDto(movieTitle, nameOfRoom, dateFormat.parse(startingTime));
 
 
-        if (screeningService.isThereAnOverlap(screeningDto)){
+        if (screeningService.isThereAnOverlap(screeningDto)) {
             throw new Exception("There is an overlapping screening");
         }
-        if (screeningService.isThereAnOverlap(screeningDto)){
+        if (screeningService.isThereAnOverlap(screeningDto)) {
             throw new Exception("This would start in the break period after another screening in this room");
         }
         screeningService.addScreening(screeningDto);

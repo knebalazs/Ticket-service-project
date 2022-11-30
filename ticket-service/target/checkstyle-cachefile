@@ -1,28 +1,28 @@
-#Tue Nov 29 23:50:15 CET 2022
+#Wed Nov 30 19:36:13 CET 2022
 C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\room\\model\\RoomDto.java=1669733058196
 C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\Application.java=1669733058170
 C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\user\\UserService.java=1669733058219
-C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\screening\\ScreeningService.java=1669733058209
-C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\ui\\command\\MovieCommand.java=1669733058224
+C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\screening\\ScreeningService.java=1669833041587
+C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\ui\\command\\MovieCommand.java=1669833368112
 C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\user\\User.java=1669733058218
 C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\movies\\MovieServiceImpl.java=1669733058174
 C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\user\\UserServiceImpl.java=1669733058220
-C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\screening\\presistence\\entity\\Screening.java=1669733058215
+C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\screening\\presistence\\entity\\Screening.java=1669763445819
 C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\movies\\presistence\\repository\\MovieRepository.java=1669733058190
 C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\room\\presistence\\entity\\Room.java=1669733058204
 configuration*?=57A70492BEAFBC01172D1DED8BDE51F532C74F94
 C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\room\\presistence\\repository\\RoomRepository.java=1669733058207
-C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\screening\\presistence\\repository\\ScreeningRepository.java=1669733058217
-C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\room\\RoomServiceImpl.java=1669733058194
+C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\screening\\presistence\\repository\\ScreeningRepository.java=1669832930270
+C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\room\\RoomServiceImpl.java=1669816701192
 C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\ui\\command\\AdminCommand.java=1669733058221
 C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\movies\\MovieService.java=1669733058173
 C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\movies\\presistence\\entity\\Movie.java=1669733058188
-C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\screening\\model\\ScreeningDto.java=1669733058213
-C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\ui\\command\\ScreeningCommand.java=1669733058232
+C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\screening\\model\\ScreeningDto.java=1669763548129
 C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\ui\\configuration\\PromptConfiguration.java=1669733058235
+C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\ui\\command\\ScreeningCommand.java=1669833345254
 module-resource*?\:checkstyle-xpath-suppressions.xml=A30BDB40A82E83705346B6587FC017183CB78616
 module-resource*?\:checkstyle-suppressions.xml=C5A7954CD1ADD2D74CD3425182728EC1F2723BA5
 C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\movies\\model\\MovieDto.java=1669733058183
 C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\room\\RoomService.java=1669733058192
 C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\ui\\command\\RoomCommand.java=1669733058229
-C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\screening\\ScreeningServiceImpl.java=1669733058210
+C\:\\Users\\Balazs\\Desktop\\epam-projekt\\Ticket-service-project\\ticket-service\\src\\main\\java\\com\\epam\\training\\ticketservice\\core\\screening\\ScreeningServiceImpl.java=1669833345282

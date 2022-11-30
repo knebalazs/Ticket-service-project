@@ -63,7 +63,8 @@ public class MovieCommand {
             return "There are no movies at the moment";
         }
         for (MovieDto m : movieList) {
-            mlist.append(m.getTitle()).append(" (").append(m.getGenre()).append(", ").append(m.getLengthInMinutes()).append(" minutes)\n");
+            mlist.append(m.getTitle()).append(" (").append(m.getGenre()).append(", ")
+                    .append(m.getLengthInMinutes()).append(" minutes)\n");
         }
         return mlist.toString();
     }

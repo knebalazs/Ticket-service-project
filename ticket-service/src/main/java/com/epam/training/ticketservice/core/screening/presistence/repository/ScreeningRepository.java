@@ -9,5 +9,6 @@ import java.util.Optional;
 
 @Repository
 public interface ScreeningRepository extends JpaRepository<Screening, Integer> {
-    Optional<Screening> findByMovieTitleAndRoomNameAndStartingTime(String movieTitle, String roomName, Date startingTime);
+    Optional<Screening> findByMovieTitleAndRoomNameAndStartingTime(String movieTitle,
+                                                                   String roomName, Date startingTime);
 }
