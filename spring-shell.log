@@ -73,3 +73,51 @@
 1669835788662:stacktrace
 1669835802858:delete screening "Spirited Away" Pedersoli "2021-03-14 16:00"
 1669835809339:stacktrace
+1669850625479:help
+1669856282729:sign in privileged admin admin
+1669858602925:list screenings
+1669858626494:sign in privileged admin admin
+1669858633406:create movie "Spirited Away" drama 450
+1669858639098:create room "Pedersoli" 15 35
+1669858647087:create screening "Spirited Away" Pedersoli "2021-03-14 16:00"
+1669858652570:list screenings
+1669858673823:delete screening "Spirited Away" Pedersoli "2021-03-14 16:00"
+1669858771499:sign in privileged admin admin
+1669858772289:create movie "Spirited Away" drama 450
+1669858778402:create room "Pedersoli" 15 35
+1669858784526:create screening "Spirited Away" Pedersoli "2021-03-14 16:00"
+1669858835201:create screening "Spirited Away" Pedersoli "2021-03-14 23:00"
+1669858849656:create screening "Spirited Away" Pedersoli "2021-03-14 23:50"
+1669858909945:create screening "Spirited Away" Pedersoli "2021-03-15 5:00"
+1669858921033:create screening "Spirited Away" Pedersoli "2021-03-14 12:20"
+1669858925257:create screening "Spirited Away" Pedersoli "2021-03-14 16:30"
+1669858938210:create screening "Spirited Away" Pedersoli "2021-03-15 12:00"
+1669859014971:create screening "LOTR" Pedersoli "2021-03-10 10:00"
+1669859055046:create movie "LOTR" "fantasy" 60
+1669859057352:create screening "LOTR" Pedersoli "2021-03-10 10:00"
+1669859067097:create screening "LOTR" Pedersoli "2021-03-10 10:50"
+1669859104254:create screening "LOTR" Pedersoli "2021-03-10 10:60"
+1669859122430:create screening "LOTR" Pedersoli "2021-03-10 11:00"
+1669859125164:create screening "LOTR" Pedersoli "2021-03-10 10:01"
+1669859135705:create screening "LOTR" Pedersoli "2021-03-10 10:11"
+1669859139106:create screening "LOTR" Pedersoli "2021-03-10 10:50"
+1669859142882:create screening "LOTR" Pedersoli "2021-03-10 10:60"
+1669859146615:create screening "LOTR" Pedersoli "2021-03-10 13:00"
+1669859154331:create screening "LOTR" Pedersoli "2021-03-10 13:20"
+1669859158720:list screanings
+1669859165221:list screaning
+1669859170868:help
+1669859175024:list screenings
+1669859432020:sign in privileged admin admin
+1669859437684:create movie "Spirited Away" drama 450
+1669859475701:create movie "Spirited Away" drama 60
+1669859485246:create room "Pedersoli" 15 35
+1669859495140:create screening "Spirited Away" Pedersoli "2021-03-14 16:00"
+1669859500429:create screening "Spirited Away" Pedersoli "2021-03-14 16:30"
+1669859509745:create screening "Spirited Away" Pedersoli "2021-03-14 16:50"
+1669859519544:create screening "Spirited Away" Pedersoli "2021-03-14 17:00"
+1669859545811:create screening "Spirited Away" Pedersoli "2021-03-14 16:00"
+1669859553105:create screening "Spirited Away" Pedersoli "2021-03-14 16:50"
+1669859559337:create screening "Spirited Away" Pedersoli "2021-03-14 17:00"
+1669859565059:create screening "Spirited Away" Pedersoli "2021-03-14 18:00"
+1669859569497:create screening "Spirited Away" Pedersoli "2021-03-14 16:00"

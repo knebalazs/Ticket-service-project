@@ -9,9 +9,7 @@ public interface ScreeningService {
 
     void removeScreening(ScreeningDto screeningDto);
 
-    Boolean isThereAnOverlap(ScreeningDto screeningDto);
-
-    Boolean isTimeInBrakeTime(ScreeningDto screeningDto);
+    Boolean isThereAnOverlap(ScreeningDto screeningDto, Boolean breakIncluded);
 
     List<ScreeningDto> getScreeningList();
 }

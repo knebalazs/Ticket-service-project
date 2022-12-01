@@ -36,6 +36,9 @@ public class MovieCommand {
         }
         try {
             movieService.updateMovie(movieDto);
+            StringBuilder m = new StringBuilder();
+            m.append(movieDto.getTitle()).append(" (").append(movieDto.getGenre()).append(", ")
+                    .append(movieDto.getLengthInMinutes()).append(" minutes)\n");
             return "movie updated";
         } catch (Exception e) {
             return "invalid movie";

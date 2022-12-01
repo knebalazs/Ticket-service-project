@@ -41,10 +41,10 @@ public class ScreeningCommand {
         ScreeningDto screeningDto = new ScreeningDto(movieTitle, nameOfRoom, dateFormat.parse(startingTime));
 
 
-        if (screeningService.isThereAnOverlap(screeningDto)) {
+        if (screeningService.isThereAnOverlap(screeningDto, false)) {
             return "There is an overlapping screening";
         }
-        if (screeningService.isThereAnOverlap(screeningDto)) {
+        if (screeningService.isThereAnOverlap(screeningDto, true)) {
             return "This would start in the break period after another screening in this room";
         }
         screeningService.addScreening(screeningDto);
@@ -52,12 +52,13 @@ public class ScreeningCommand {
     }
 
     @ShellMethod(key = "delete screening", value = "Deletes a screening")
-    public String deleteScreening(String movieTitle, String nameOfRoom, Date startingTime) throws Exception {
+    public String deleteScreening(String movieTitle, String nameOfRoom, String startingTime) throws Exception {
         if (userService.describeUser().getRole().equals(User.Role.USER)) {
             throw new Exception("only admin user can create screening");
         }
         try {
-            ScreeningDto screeningDto = new ScreeningDto(movieTitle, nameOfRoom, startingTime);
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+            ScreeningDto screeningDto = new ScreeningDto(movieTitle, nameOfRoom, dateFormat.parse(startingTime));
             screeningService.removeScreening(screeningDto);
             return "room deleted";
         } catch (Exception e) {

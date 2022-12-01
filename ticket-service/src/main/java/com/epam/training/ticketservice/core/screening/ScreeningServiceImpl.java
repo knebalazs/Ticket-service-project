@@ -39,12 +39,18 @@ public class ScreeningServiceImpl implements ScreeningService {
     }
 
     @Override
-    public Boolean isThereAnOverlap(ScreeningDto screeningDto) {
+    public Boolean isThereAnOverlap(ScreeningDto screeningDto, Boolean breakIncluded) {
         for (ScreeningDto s : getScreeningList()) {
             if (s.getRoomName().equals(screeningDto.getRoomName())) {
                 Long timeDiff = (s.getStartingTime().getTime() - screeningDto.getStartingTime().getTime()) / 60000;
                 if (timeDiff >= 0) {
-                    return timeDiff < movieRepository.findByTitle(s.getMovieTitle()).get().getLengthInMinutes();
+                    if (breakIncluded) {
+                        return timeDiff < movieRepository.findByTitle(s.getMovieTitle()).get()
+                                .getLengthInMinutes() + 10;
+                    } else {
+                        System.out.println(timeDiff);
+                        return timeDiff < movieRepository.findByTitle(s.getMovieTitle()).get().getLengthInMinutes();
+                    }
                 } else {
                     return timeDiff + movieRepository.findByTitle(screeningDto.getMovieTitle())
                             .get().getLengthInMinutes() > 0;
@@ -52,11 +58,6 @@ public class ScreeningServiceImpl implements ScreeningService {
             }
         }
         return false;
-    }
-
-    @Override
-    public Boolean isTimeInBrakeTime(ScreeningDto screeningDto) {
-        return null;
     }
 
     @Override
