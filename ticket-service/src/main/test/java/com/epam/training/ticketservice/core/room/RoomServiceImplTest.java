@@ -12,6 +12,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
@@ -47,5 +48,17 @@ public class RoomServiceImplTest {
 
         // Then
         Mockito.verify(roomRepository).save(ENTITY);
+    }
+    @Test
+    void testRemoveRoomShouldDeleteTheGivenRoomWhenTheInputRoomIsValid() {
+        // Given
+        Mockito.when(roomRepository.findByName(ENTITY.getName())).thenReturn(Optional.of(ENTITY));
+
+        // Mockito.when
+        underTest.removeRoom(ENTITY.getName());
+
+        // Then
+        Mockito.verify(roomRepository).delete(ENTITY);
+
     }
 }

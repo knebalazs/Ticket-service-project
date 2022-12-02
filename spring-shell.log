@@ -121,3 +121,33 @@
 1669859559337:create screening "Spirited Away" Pedersoli "2021-03-14 17:00"
 1669859565059:create screening "Spirited Away" Pedersoli "2021-03-14 18:00"
 1669859569497:create screening "Spirited Away" Pedersoli "2021-03-14 16:00"
+1669985487983:sign in privileged admin admin
+1669985495201:create movie "Spirited Away" drama 450
+1669985515848:update movie "Spirited Away" fantasy 450
+1669985519323:list movies
+1669988428954:sign in privileged admin admin
+1669988434001:create movie "Spirited Away" drama 120
+1669988439403:create movie "Harry Potter" fantasy 60
+1669988443288:create room "Pedersoli" 15 35
+1669988448733:create screening "Spirited Away" Pedersoli "2021-03-14 16:00"
+1669988464691:create screening "Harry Potter" Pedersoli "2021-03-14 16:50"
+1669988472612:create screening "Harry Potter" Pedersoli "2021-03-14 16:00"
+1669988485247:create screening "Harry Potter" Pedersoli "2021-03-14 17:50"
+1669988498635:create screening "Harry Potter" Pedersoli "2021-03-14 18:00"
+1669988504447:create screening "Harry Potter" Pedersoli "2021-03-14 18:50"
+1669988531551:create screening "Harry Potter" Pedersoli "2021-03-14 15:30"
+1669988548545:create screening "Harry Potter" Pedersoli "2021-03-14 15:01"
+1669988551515:create screening "Harry Potter" Pedersoli "2021-03-14 15:00"
+1669988560295:create screening "Harry Potter" Pedersoli "2021-03-14 14:55"
+1669988565894:create screening "Harry Potter" Pedersoli "2021-03-14 14:51"
+1669988571374:create screening "Harry Potter" Pedersoli "2021-03-14 14:50"
+1669988982251:sign in privileged admin admin
+1669988995808:create screening Sátántangó Pedersoli \\"2021-03-15 10:45\\"
+1669989026808:create room Pedersoli 20 10
+1669989031475:create room Girotti 10 10
+1669989036470:create movie Sátántangó drama 450
+1669989041928:create movie \\"Spirited Away\\" animation 125
+1669989047903:create movie "Spirited Away" animation 125
+1669989083437:create screening Sátántangó Pedersoli "2021-03-15 10:45"
+1669989129221:create screening "Spirited Away" Pedersoli "2021-03-15 10:50"
+1669989149286:list screenings

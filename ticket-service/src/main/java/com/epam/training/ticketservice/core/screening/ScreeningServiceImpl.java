@@ -42,18 +42,22 @@ public class ScreeningServiceImpl implements ScreeningService {
     public Boolean isThereAnOverlap(ScreeningDto screeningDto, Boolean breakIncluded) {
         for (ScreeningDto s : getScreeningList()) {
             if (s.getRoomName().equals(screeningDto.getRoomName())) {
-                Long timeDiff = (s.getStartingTime().getTime() - screeningDto.getStartingTime().getTime()) / 60000;
+                Long timeDiff = (screeningDto.getStartingTime().getTime() - s.getStartingTime().getTime()) / 60000;
                 if (timeDiff >= 0) {
                     if (breakIncluded) {
-                        return timeDiff < movieRepository.findByTitle(s.getMovieTitle()).get()
+                        return timeDiff <= movieRepository.findByTitle(s.getMovieTitle()).get()
                                 .getLengthInMinutes() + 10;
                     } else {
-                        System.out.println(timeDiff);
-                        return timeDiff < movieRepository.findByTitle(s.getMovieTitle()).get().getLengthInMinutes();
+                        return timeDiff <= movieRepository.findByTitle(s.getMovieTitle()).get().getLengthInMinutes();
                     }
                 } else {
-                    return timeDiff + movieRepository.findByTitle(screeningDto.getMovieTitle())
-                            .get().getLengthInMinutes() > 0;
+                    if (breakIncluded) {
+                        return timeDiff + movieRepository.findByTitle(screeningDto.getMovieTitle())
+                                .get().getLengthInMinutes() >= -10;
+                    } else {
+                        return timeDiff + movieRepository.findByTitle(screeningDto.getMovieTitle())
+                                .get().getLengthInMinutes() >= 0;
+                    }
                 }
             }
         }
@@ -71,7 +75,4 @@ public class ScreeningServiceImpl implements ScreeningService {
         return new ScreeningDto(screening.getMovieTitle(), screening.getRoomName(), screening.getStartingTime());
     }
 
-    private Boolean checkTheIfTimeIsInBreak(Date startingTime, Date endingTime) {
-        return true;
-    }
 }
